@@ -1,0 +1,111 @@
+body {
+  /* background-image: url('/src/components/sss.jpg'); Replace 'bg.png' with your image path */
+  background-color: #6d7dc2;
+  background-size: cover;
+  background-attachment: fixed; /* This ensures the background stays fixed while scrolling */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  /* position: fixed; */
+
+}
+.Navi_col {
+  background-color: rgb(0, 4, 249);
+  width: 100%;
+  padding: 1px 20px;
+  height: 15%; /* Set the navigation height to 15% */
+  display: flex;
+  justify-content: space-between; /* Align content to the space between */
+  align-items: center; /* Vertically center align items */
+  color: #ffff;
+}
+
+.search_btn {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  text-align: right;
+}
+
+.button button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #ffff;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px; /* Add border radius */
+}
+
+.button button:hover {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px; /* Remove border radius on hover */
+}
+/* /////prodct disply css */
+/* ProductCard.css */
+/* ProductCard.css */
+
+.product-card {
+  width: 300px;
+  height: 400px; /* Set a fixed height for all product cards */
+  margin: 20px; /* Add margins for spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid #ccc; Remove this line to remove the border */
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.product-image img {
+  width: 200px; /* Set the width you want */
+  height: 150px; /* Calculate the height based on the aspect ratio (4:3 in this case) */
+  object-fit: cover; /* Ensure images maintain their aspect ratio */
+}
+.card-body {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+.btn-success {
+  background-color: #00ff00; /* Change to your desired color code */
+  color: #fff; 
+
+}
+
+.Add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 100px;
+  /* background-color: #6DA4C2; */
+  background-image: url('/src/components/add.png');
+  background-size: 110% auto; /* Adjust the width as needed */
+  background-repeat: no-repeat;
+  background-position: center center;
+  animation: moveImage 10s linear infinite;
+}
+
+@keyframes moveImage {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 100% center;
+  }
+}
+
